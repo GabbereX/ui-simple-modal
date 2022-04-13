@@ -1,0 +1,42 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.modal-root-open {
+  background: rgb(0, 0, 0, 0.6);
+}
+
+.modal-window {
+  position: relative;
+  padding: 30px;
+  background: #fff;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.modal-window-open {
+  transform: scale(1);
+}
+
+.modal-close-button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
